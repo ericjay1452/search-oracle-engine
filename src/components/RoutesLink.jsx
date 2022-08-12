@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const RoutesLink = () => {
+ const RoutesLink = () => {
   return (
     <div>Routes</div>
   )
 }
+
+
+export default RoutesLink
