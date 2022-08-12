@@ -27,24 +27,23 @@ import { NavLinks } from '../Links/NavLinks'
       </div>
 
       <div className = "w-full mt-4 pb-2">
-        <div className = "w-3/12 flex justify-between items-center m-auto">
-        {
+        <ul className = "w-6/12 m-auto">
+         <li className = "flex justify-between items-center px-2">{
         NavLinks?.map( (Itemname) =>{
           const {id, name, icon, link} = Itemname;
 
           return (
-            <a href={link} target={"_self"} rel="noreferrer" key={id}>
-             <ul>
-              <li>
-                <span>{icon}</span>
-                <span>{name}</span>
-              </li>
-              </ul> 
+               <a href={link} target={"_self"} rel="noreferrer"  className = "flex items-center justify-center" key={id}>
+                <span className='block px-1'>{icon}</span> 
+                <span className='block px-1'>{name}</span>
+                
+               </a>
              
-            </a>
           )
         })
-        }</div>
+        }
+        </li>
+        </ul>
         </div>
 
 
