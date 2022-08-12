@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {RiMoonFill} from "react-icons/ri"
 
  const Navbar = ({setDarkTheme, darkTheme}) => {
   return (
@@ -16,7 +17,7 @@ import { Link } from 'react-router-dom'
          
          <button className = "text-xl dark:bg-neutral-50 dark:text-neutral-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg transition-all" 
          type='button' onClick={()=> setDarkTheme(!darkTheme)}>
-          {darkTheme ? "Light" : "Dark"}
+          {darkTheme ? "Light" : <RiMoonFill />}
          </button>
       </div>
     </div>
