@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Routes = () => {
+export const RoutesLink = () => {
   return (
     <div>Routes</div>
   )
