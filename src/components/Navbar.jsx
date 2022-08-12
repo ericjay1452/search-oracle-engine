@@ -14,7 +14,8 @@ import { Link } from 'react-router-dom'
             </p>
         </Link>
          
-         <button className = "" type='button' onClick={()=> setDarkTheme(!darkTheme)}>
+         <button className = "text-xl dark:bg-neutral-50 dark:text-neutral-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg transition-all" 
+         type='button' onClick={()=> setDarkTheme(!darkTheme)}>
           {darkTheme ? "Light" : "Dark"}
          </button>
       </div>
